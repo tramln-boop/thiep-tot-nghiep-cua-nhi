@@ -1,5 +1,5 @@
 <!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff9fb"><title>Thiệp Mời Lễ Tốt Nghiệp</title><style>
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-snap-type:none;scroll-padding-top:0}body{margin:0;background:#fff9fb;overflow-x:hidden}section{width:100%;height:100vh;height:100dvh;min-height:0!important;position:relative;overflow:hidden;scroll-snap-align:none;scroll-snap-stop:normal}#mo-thiep{height:100dvh}#mo-thiep iframe{min-height:0}iframe{display:block;border:0;width:100%;height:100%;min-height:0;overflow:hidden;background:transparent;transform-origin:top left}#album{background:#fff9fb}#thong-tin{background:#f8f0ef}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-snap-type:none;scroll-padding-top:0}body{margin:0;background:#fff9fb;overflow-x:hidden}section{width:100%;height:100vh;height:100dvh;min-height:0!important;position:relative;overflow:hidden;scroll-snap-align:none;scroll-snap-stop:normal}#mo-thiep{height:100dvh}#mo-thiep iframe{min-height:0}iframe{display:block;border:0;width:100%;height:100%;min-height:0;overflow:hidden;background:transparent;transform-origin:top left}#thong-tin{background:#f8f0ef}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 #dia-diem{background:linear-gradient(160deg,#fffaf8 0%,#fff0f4 100%);color:#76505f;height:100dvh;min-height:0;display:flex;align-items:center;justify-content:center;padding:clamp(12px,3vh,32px) 16px;font-family:Georgia,"Times New Roman",serif;text-align:center}
 .venue-inner{width:100%;max-width:650px;margin:auto}.venue-heading{font-size:clamp(23px,5.8vw,31px);font-weight:400;line-height:1.4;letter-spacing:.015em;margin:0}.venue-en{font-size:clamp(17px,4.6vw,23px);color:#b87e95;font-weight:500;margin:4px 0 22px}.venue-address{font-size:clamp(15px,3.9vw,18px);line-height:1.7;margin:0 auto 15px;max-width:570px}.venue-rule{height:1px;background:#dfbdca;margin:0 auto 14px;max-width:520px}.venue-map{width:100%;height:clamp(180px,38dvh,380px);border-radius:16px;overflow:hidden;background:#f6e9ee;border:1px solid #e8cbd5;box-shadow:0 10px 28px #a67b891c}.venue-map iframe{width:100%;height:100%;min-height:0;border:0;display:block}.venue-directions{display:inline-flex;align-items:center;justify-content:center;gap:8px;color:#fff;text-decoration:none;font-size:16px;font-weight:bold;margin-top:14px;padding:12px 23px;background:#a36c82;border-radius:99px}.venue-directions:focus-visible{outline:2px solid #a36c82;outline-offset:4px}@media(max-width:500px){#dia-diem{padding:16px 14px}.venue-map{height:36dvh;min-height:170px;max-height:350px}.venue-rule{margin-bottom:26px}}
@@ -34,7 +34,6 @@ h1,h2,h3,h4,h5,h6{line-height:1.35}
 button,input,textarea,select{font-synthesis:none}
 </style></head><body>
 <section id="mo-thiep"><iframe title="Thiệp mời tốt nghiệp" src="mo-thiep.html" scrolling="no"></iframe></section>
-<section id="album"><iframe title="Album ảnh tốt nghiệp" src="album.html" scrolling="no"></iframe></section>
 <section id="thong-tin"><iframe title="Thông tin lễ tốt nghiệp" src="thong-tin.html" scrolling="no"></iframe></section>
 <section id="dia-diem" aria-labelledby="venue-title"><div class="venue-inner"><h2 class="venue-heading" id="venue-title">ĐỊA ĐIỂM TỔ CHỨC LỄ TỐT NGHIỆP</h2><p class="venue-en">GRADUATION VENUE</p><p class="venue-address">Nhà hát Hòa Bình, 240 đường 3 Tháng 2,<br>phường Hòa Hưng, TP. Hồ Chí Minh</p><div class="venue-rule"></div><div class="venue-map"><iframe title="Bản đồ Nhà hát Hòa Bình" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Nh%C3%A0%20h%C3%A1t%20H%C3%B2a%20B%C3%ACnh%2C%20240%20%C4%91%C6%B0%E1%BB%9Dng%203%20Th%C3%A1ng%202%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh&amp;z=16&amp;output=embed" allowfullscreen></iframe></div><a class="venue-directions" href="https://maps.app.goo.gl/e3cP1FKgK95QvWds6" target="_blank" rel="noopener noreferrer">↗ &nbsp;CHỈ ĐƯỜNG</a></div></section>
 
@@ -75,7 +74,7 @@ frames.forEach(frame=>frame.addEventListener('load',()=>{
   const doc=frame.contentDocument;
   const style=doc.createElement('style');
   style.textContent='.preview-nav{display:none!important}html,body{overflow-x:hidden!important}';doc.head.append(style);
-  doc.querySelectorAll('a[href="index.html"],a[href="album.html"],a[href="thong-tin.html"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();go(a.getAttribute('href')==='album.html'?'album':a.getAttribute('href')==='thong-tin.html'?'thong-tin':'mo-thiep')}));
+  doc.querySelectorAll('a[href="index.html"],a[href="album.html"],a[href="thong-tin.html"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();go(a.getAttribute('href')==='album.html'?'thong-tin':a.getAttribute('href')==='thong-tin.html'?'thong-tin':'mo-thiep')}));
   fit(frame);
   setTimeout(()=>fit(frame),350);
   setTimeout(()=>fit(frame),1200);
@@ -83,7 +82,7 @@ frames.forEach(frame=>frame.addEventListener('load',()=>{
 }));
 window.addEventListener('message',e=>{
   if(!frames.some(f=>f.contentWindow===e.source)||!e.data)return;
-  if(e.data.type==='navigate')go('album');
+  if(e.data.type==='navigate')go('thong-tin');
   if(e.data.type==='open-venue')go('dia-diem');
   if(e.data.type==='open-guestbook'){
     go('luu-but');
