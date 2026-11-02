@@ -1,0 +1,1 @@
+Landing page cuộn tự nhiên, không tự hút sang từng trang. Giải nén và tải toàn bộ thư mục chứa index.html lên Netlify Deploys. Các nút chỉ đường và xác nhận tham dự vẫn cuộn mượt đến đúng phần.
