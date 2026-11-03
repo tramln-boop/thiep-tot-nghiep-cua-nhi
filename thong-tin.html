@@ -251,13 +251,6 @@ h1{font-size:clamp(43px,9vw,62px)!important;line-height:1.14!important}
 /* Keep Vietnamese content in Playfair Display; only the English display title uses Great Vibes. */
 #page-title { font-family: "Great Vibes", cursive !important; font-weight: 400 !important; font-size: clamp(54px, 12vw, 76px) !important; line-height: 1.35 !important; letter-spacing: 0 !important; word-spacing: normal !important; padding: 0.12em 0 0.08em; }
 @media (max-width: 380px) { #page-title { font-size: clamp(48px, 11.5vw, 62px) !important; } }
-</style><style id="nhi-graduate-photo">
-.rsvp-section{position:relative;isolation:isolate;padding:0!important;text-align:center}
-.portrait-stage{position:relative;width:100%;height:clamp(210px,31dvh,315px);overflow:hidden;margin:8px auto 4px;background:transparent}
-.portrait-stage .graduate-portrait{position:absolute;display:block;width:auto;height:120%;max-width:none;left:2%;bottom:-15%;object-fit:contain;object-position:left bottom;filter:drop-shadow(0 5px 8px rgba(140,82,103,.09));-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 82%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 82%,transparent 100%)}
-.rsvp-section .add-calendar{position:relative;z-index:2}
-.arrival-confirm{position:relative;z-index:3;margin-top:10px!important}
-@media(max-width:380px){.portrait-stage{height:clamp(180px,28dvh,260px)}.portrait-stage .graduate-portrait{left:0;height:115%}}
 </style></head>
 <body>
 <main class="page canva-container">
@@ -285,8 +278,15 @@ h1{font-size:clamp(43px,9vw,62px)!important;line-height:1.14!important}
 
 </section>
 <section aria-labelledby="calendar-title" class="rsvp-section canva-section" id="rsvp-section">
-<a class="add-calendar canva-link" style="display:none" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=L%E1%BB%85%20t%E1%BB%91t%20nghi%E1%BB%87p&amp;dates=20261117T110000/20261117T120000&amp;details=L%E1%BB%85%20t%E1%BB%91t%20nghi%E1%BB%87p%20l%C3%BAc%2011%3A00%20ng%C3%A0y%2017%20th%C3%A1ng%2011%20n%C4%83m%202026.&amp;location=Nh%C3%A0%20h%C3%A1t%20H%C3%B2a%20B%C3%ACnh%2C%20240%20%C4%91%C6%B0%E1%BB%9Dng%203%20Th%C3%A1ng%202%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh&amp;ctz=Asia%2FHo_Chi_Minh" id="add-calendar-link" rel="noopener noreferrer" target="_blank">Thêm vào lịch / Add to Calendar</a>
-<div class="portrait-stage"><img class="graduate-portrait" src="3c21e4d0-5aff-4059-9081-39143747358e.jpg" alt="Nhi trong trang phục tốt nghiệp" loading="eager" onerror="this.style.display='none'"/></div><button class="rsvp-button arrival-confirm" id="rsvp-button" type="button">XÁC NHẬN THAM DỰ</button>
+<a class="add-calendar canva-link" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=L%E1%BB%85%20t%E1%BB%91t%20nghi%E1%BB%87p&amp;dates=20261117T110000/20261117T120000&amp;details=L%E1%BB%85%20t%E1%BB%91t%20nghi%E1%BB%87p%20l%C3%BAc%2011%3A00%20ng%C3%A0y%2017%20th%C3%A1ng%2011%20n%C4%83m%202026.&amp;location=Nh%C3%A0%20h%C3%A1t%20H%C3%B2a%20B%C3%ACnh%2C%20240%20%C4%91%C6%B0%E1%BB%9Dng%203%20Th%C3%A1ng%202%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh&amp;ctz=Asia%2FHo_Chi_Minh" id="add-calendar-link" rel="noopener noreferrer" target="_blank">Thêm vào lịch / Add to Calendar</a>
+<div aria-label="Lịch tháng 11 năm 2026, ngày 17 là ngày lễ tốt nghiệp" class="calendar canva-card" role="group">
+<h2 class="calendar-title canva-text" id="calendar-title">Tháng 11 / 2026</h2>
+<div aria-hidden="true" class="calendar-grid calendar-weekdays">
+<span>T2</span><span>T3</span><span>T4</span><span>T5</span><span>T6</span><span>T7</span><span>CN</span>
+</div>
+<div aria-label="Các ngày trong tháng 11 năm 2026" class="calendar-grid calendar-days canva-list"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span>1</span> <span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span> <span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span> <span>16</span><span aria-label="17 tháng 11, ngày lễ tốt nghiệp" class="featured-day">17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span> <span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span> <span>30</span>
+</div>
+</div><button class="rsvp-button arrival-confirm" id="rsvp-button" type="button">XÁC NHẬN THAM DỰ</button>
 <p aria-live="polite" class="rsvp-feedback canva-text" id="rsvp-feedback" role="status"></p>
 </section>
 
