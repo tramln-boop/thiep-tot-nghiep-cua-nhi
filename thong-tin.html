@@ -253,10 +253,11 @@ h1{font-size:clamp(43px,9vw,62px)!important;line-height:1.14!important}
 @media (max-width: 380px) { #page-title { font-size: clamp(48px, 11.5vw, 62px) !important; } }
 </style><style id="nhi-graduate-photo">
 .rsvp-section{position:relative;isolation:isolate;padding:0!important;text-align:center}
-.portrait-stage{position:relative;width:100%;height:clamp(150px,22dvh,215px);overflow:visible;margin:0 auto 2px;background:transparent}
-.portrait-stage .graduate-portrait{position:absolute;display:block;width:auto;height:100%;max-width:65%;left:4%;bottom:0;object-fit:contain;object-position:left bottom;filter:drop-shadow(0 5px 8px rgba(140,82,103,.09));-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 85%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 85%,transparent 100%)}
-.arrival-confirm{position:relative;z-index:3;margin:5px auto 0!important}
-@media(max-height:740px){.portrait-stage{height:clamp(115px,18dvh,165px)}}
+.portrait-stage{position:relative;width:100%;height:clamp(210px,31dvh,315px);overflow:hidden;margin:8px auto 4px;background:transparent}
+.portrait-stage .graduate-portrait{position:absolute;display:block;width:auto;height:120%;max-width:none;left:2%;bottom:-15%;object-fit:contain;object-position:left bottom;filter:drop-shadow(0 5px 8px rgba(140,82,103,.09));-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 82%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 82%,transparent 100%)}
+.rsvp-section .add-calendar{position:relative;z-index:2}
+.arrival-confirm{position:relative;z-index:3;margin-top:10px!important}
+@media(max-width:380px){.portrait-stage{height:clamp(180px,28dvh,260px)}.portrait-stage .graduate-portrait{left:0;height:115%}}
 </style></head>
 <body>
 <main class="page canva-container">
@@ -285,7 +286,7 @@ h1{font-size:clamp(43px,9vw,62px)!important;line-height:1.14!important}
 </section>
 <section aria-labelledby="calendar-title" class="rsvp-section canva-section" id="rsvp-section">
 <a class="add-calendar canva-link" style="display:none" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=L%E1%BB%85%20t%E1%BB%91t%20nghi%E1%BB%87p&amp;dates=20261117T110000/20261117T120000&amp;details=L%E1%BB%85%20t%E1%BB%91t%20nghi%E1%BB%87p%20l%C3%BAc%2011%3A00%20ng%C3%A0y%2017%20th%C3%A1ng%2011%20n%C4%83m%202026.&amp;location=Nh%C3%A0%20h%C3%A1t%20H%C3%B2a%20B%C3%ACnh%2C%20240%20%C4%91%C6%B0%E1%BB%9Dng%203%20Th%C3%A1ng%202%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh&amp;ctz=Asia%2FHo_Chi_Minh" id="add-calendar-link" rel="noopener noreferrer" target="_blank">Thêm vào lịch / Add to Calendar</a>
-<div class="portrait-stage"><img class="graduate-portrait" src="./3c21e4d0-5aff-4059-9081-39143747358e.jpg?v=2" alt="Nhi trong trang phục tốt nghiệp" loading="eager"/></div><button class="rsvp-button arrival-confirm" id="rsvp-button" type="button">XÁC NHẬN THAM DỰ</button>
+<div class="portrait-stage"><img class="graduate-portrait" src="3c21e4d0-5aff-4059-9081-39143747358e.jpg" alt="Nhi trong trang phục tốt nghiệp" loading="eager" onerror="this.style.display='none'"/></div><button class="rsvp-button arrival-confirm" id="rsvp-button" type="button">XÁC NHẬN THAM DỰ</button>
 <p aria-live="polite" class="rsvp-feedback canva-text" id="rsvp-feedback" role="status"></p>
 </section>
 
