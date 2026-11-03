@@ -271,6 +271,31 @@ h1{font-size:clamp(43px,9vw,62px)!important;line-height:1.14!important}
 .calendar-days .featured-day{height:clamp(19px,2.7dvh,25px)!important;width:clamp(19px,2.7dvh,25px)!important}
 #rsvp-button{display:flex!important;visibility:visible!important;opacity:1!important;position:relative!important;z-index:2!important;margin:clamp(8px,1.2dvh,12px) auto 0!important;min-height:38px!important;padding:8px 20px!important;white-space:nowrap!important;font-size:clamp(11px,1.6dvh,13px)!important}
 }
+</style><style id="ceremony-contact-compact">
+@media(max-width:600px){
+.page{padding-top:7px!important;padding-bottom:8px!important}
+.content{gap:2px!important}
+#page-title{font-size:clamp(45px,10.5vw,63px)!important;line-height:1.15!important;padding:0!important}
+.eyebrow{font-size:9px!important;margin-bottom:1px!important}
+.ceremony-date h2{font-size:clamp(12px,1.7dvh,15px)!important;margin-bottom:3px!important}
+.date-intro{font-size:11px!important}
+.venue-name{font-size:clamp(19px,2.7dvh,24px)!important}
+.venue-jump{font-size:11px!important;margin-bottom:2px!important}
+.ceremony-time{font-size:clamp(28px,4dvh,37px)!important;margin-bottom:3px!important}
+.date-part{font-size:clamp(12px,1.7dvh,16px)!important}
+.date-number{font-size:clamp(28px,4dvh,36px)!important}
+.date-year{font-size:clamp(16px,2.3dvh,20px)!important;margin-top:2px!important}
+.add-calendar{font-size:11px!important;margin-bottom:4px!important}
+.calendar{width:min(100%,310px)}
+.calendar-days span{height:clamp(17px,2.35dvh,22px)!important}
+.calendar-days .featured-day{height:clamp(17px,2.35dvh,22px)!important;width:clamp(17px,2.35dvh,22px)!important}
+#rsvp-button{margin:5px auto 0!important;min-height:34px!important;padding:6px 16px!important}
+}
+.ceremony-contact{text-align:center;color:#965d72;margin:8px auto 0;font-family:"Playfair Display",Georgia,serif}
+.ceremony-contact-title{font-size:clamp(11px,1.5dvh,13px);font-weight:700;letter-spacing:.06em;margin:0 0 3px}
+.ceremony-contact-line{font-size:clamp(11px,1.55dvh,13px);line-height:1.5;margin:0}
+.ceremony-contact a{color:inherit;text-decoration:none}
+.ceremony-contact a:hover{text-decoration:underline}
 </style></head>
 <body>
 <main class="page canva-container">
@@ -306,7 +331,7 @@ h1{font-size:clamp(43px,9vw,62px)!important;line-height:1.14!important}
 </div>
 <div aria-label="Các ngày trong tháng 11 năm 2026" class="calendar-grid calendar-days canva-list"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span>1</span> <span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span> <span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span> <span>16</span><span aria-label="17 tháng 11, ngày lễ tốt nghiệp" class="featured-day">17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span> <span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span> <span>30</span>
 </div>
-</div><button class="rsvp-button arrival-confirm" id="rsvp-button" type="button">XÁC NHẬN THAM DỰ</button>
+</div><div class="ceremony-contact" aria-label="Thông tin liên hệ"><p class="ceremony-contact-title">LIÊN HỆ</p><p class="ceremony-contact-line"><a href="tel:0963012644">0963.012.644</a> (Nhie)</p><p class="ceremony-contact-line"><a href="tel:0907431066">0907.431.066</a> (Thảo – bạn Nhi)</p></div><button class="rsvp-button arrival-confirm" id="rsvp-button" type="button">XÁC NHẬN THAM DỰ</button>
 <p aria-live="polite" class="rsvp-feedback canva-text" id="rsvp-feedback" role="status"></p>
 </section>
 
