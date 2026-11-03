@@ -28,6 +28,8 @@
 @media(max-width:420px){#dia-diem .venue-heading{font-size:22px}#luu-but .guestbook-title{font-size:24px}}
 
 #loi-ngo{display:flex;align-items:center;justify-content:center;background:#f7eee9}#loi-ngo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+#loi-ngo .next-ceremony{position:absolute;left:50%;bottom:max(3.4%,env(safe-area-inset-bottom));transform:translateX(-50%);z-index:2;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;padding:11px 22px;border:1.5px solid #bc8799;border-radius:40px;background:rgba(255,249,247,.94);color:#965d72;font:600 clamp(12px,3.5vw,16px) "Playfair Display",Georgia,serif;text-decoration:none;box-shadow:0 5px 16px #9b647322;cursor:pointer}
+#loi-ngo .next-ceremony:focus-visible{outline:2px solid #965d72;outline-offset:4px}
 </style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet"><style id="vietnamese-playfair-fix">
 /* Playfair Display with Vietnamese glyphs, avoid accent splitting caused by tracking */
 html,body,button,input,textarea,select,option,*:not(svg):not(path){font-family:"Playfair Display",Georgia,serif!important}
@@ -36,7 +38,7 @@ h1,h2,h3,h4,h5,h6{line-height:1.35}
 button,input,textarea,select{font-synthesis:none}
 </style></head><body>
 <section id="mo-thiep"><iframe title="Thiệp mời tốt nghiệp" src="mo-thiep.html" scrolling="no"></iframe></section>
-<section id="loi-ngo" aria-label="Lời nhắn của Nhi"><img src="loi-nhan-cua-nhi.jpg" alt="Lời nhắn gửi các dấu iu của Nhi nhân ngày tốt nghiệp" loading="eager"></section>
+<section id="loi-ngo" aria-label="Lời nhắn của Nhi"><img src="loi-nhan-cua-nhi.jpg" alt="Lời nhắn gửi các dấu iu của Nhi nhân ngày tốt nghiệp" loading="eager"><a class="next-ceremony" href="#thong-tin">THÔNG TIN LỄ TỐT NGHIỆP ↓</a></section>
 <section id="thong-tin"><iframe title="Thông tin lễ tốt nghiệp" src="thong-tin.html?v=calendar-restored-20261103" scrolling="no"></iframe></section>
 <section id="dia-diem" aria-labelledby="venue-title"><div class="venue-inner"><h2 class="venue-heading" id="venue-title">ĐỊA ĐIỂM TỔ CHỨC LỄ TỐT NGHIỆP</h2><p class="venue-en">GRADUATION VENUE</p><p class="venue-address">Nhà hát Hòa Bình, 240 đường 3 Tháng 2,<br>phường Hòa Hưng, TP. Hồ Chí Minh</p><div class="venue-rule"></div><div class="venue-map"><iframe title="Bản đồ Nhà hát Hòa Bình" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Nh%C3%A0%20h%C3%A1t%20H%C3%B2a%20B%C3%ACnh%2C%20240%20%C4%91%C6%B0%E1%BB%9Dng%203%20Th%C3%A1ng%202%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh&amp;z=16&amp;output=embed" allowfullscreen></iframe></div><a class="venue-directions" href="https://maps.app.goo.gl/e3cP1FKgK95QvWds6" target="_blank" rel="noopener noreferrer">↗ &nbsp;CHỈ ĐƯỜNG</a></div></section>
 
