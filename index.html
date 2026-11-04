@@ -37,7 +37,22 @@ html,body,button,input,textarea,select,option,*:not(svg):not(path){font-family:"
 h1,h2,h3,h4,h5,h6,p,label,a,button,input,textarea,span{letter-spacing:normal!important;word-spacing:normal!important;text-rendering:optimizeLegibility}
 h1,h2,h3,h4,h5,h6{line-height:1.35}
 button,input,textarea,select{font-synthesis:none}
-</style></head><body>
+</style><script>
+/* Always open the invitation at its cover, including when a mobile browser
+   restores an old scroll position or the URL contains an anchor. */
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+function showInvitationCover(){
+  document.documentElement.style.scrollBehavior='auto';
+  window.scrollTo(0,0);
+  document.documentElement.scrollTop=0;
+  document.body.scrollTop=0;
+  requestAnimationFrame(()=>{window.scrollTo(0,0);document.documentElement.style.scrollBehavior='';});
+}
+if(location.hash) history.replaceState(null,'',location.pathname+location.search);
+showInvitationCover();
+window.addEventListener('pageshow',showInvitationCover);
+window.addEventListener('load',()=>{showInvitationCover();setTimeout(showInvitationCover,180);});
+</script></head><body>
 <section id="mo-thiep"><iframe title="Thiệp mời tốt nghiệp" src="mo-thiep.html?v=cuc-dang-20261103" scrolling="no"></iframe></section>
 <section id="loi-ngo" aria-label="Lời nhắn của Nhi"><img src="4b9ac4c5-9732-4115-b184-f9c18801bab7.png" alt="Lời nhắn gửi các dấu iu của Nhi nhân ngày tốt nghiệp" loading="eager"><a class="next-ceremony" href="#thong-tin">THÔNG TIN LỄ TỐT NGHIỆP ↓</a></section>
 <section id="thong-tin"><iframe title="Thông tin lễ tốt nghiệp" src="thong-tin.html?v=contact-layout-20261104" scrolling="no"></iframe></section>
