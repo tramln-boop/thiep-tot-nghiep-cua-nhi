@@ -296,6 +296,25 @@ h1{font-size:clamp(43px,9vw,62px)!important;line-height:1.14!important}
 .ceremony-contact-line{font-size:clamp(11px,1.55dvh,13px);line-height:1.5;margin:0}
 .ceremony-contact a{color:inherit;text-decoration:none}
 .ceremony-contact a:hover{text-decoration:underline}
+</style><style id="contact-visible-fix">
+.ceremony-contact{margin:5px auto 2px!important;flex-shrink:0}
+.ceremony-contact-title{font-size:11px!important;margin:0!important}
+.ceremony-contact-line{font-size:12px!important;line-height:1.35!important}
+@media(max-width:600px){
+.page{min-height:100dvh!important;padding-top:5px!important;padding-bottom:5px!important}
+.content{justify-content:space-evenly!important;gap:1px!important}
+#page-title{font-size:clamp(40px,9.8vw,58px)!important}
+.divider{margin:0!important}
+.details{gap:2px!important}
+.ceremony-time{font-size:clamp(26px,3.6dvh,34px)!important}
+.date-year{margin-top:0!important}
+.rsvp-section{padding:0 4px!important}
+.calendar-title{padding:3px 4px!important}
+.calendar-weekdays span{padding:2px 0!important}
+.calendar-days span{height:clamp(16px,2.1dvh,21px)!important}
+.calendar-days .featured-day{height:clamp(16px,2.1dvh,21px)!important;width:clamp(16px,2.1dvh,21px)!important}
+#rsvp-button{margin:7px auto 0!important;min-height:36px!important}
+}
 </style></head>
 <body>
 <main class="page canva-container">
@@ -319,7 +338,7 @@ h1{font-size:clamp(43px,9vw,62px)!important;line-height:1.14!important}
 <div aria-label="Ngày diễn ra buổi lễ" class="date-row" id="event-date">
 <span class="date-part canva-text">THỨ 3</span> <span class="date-part date-number canva-text">17</span> <span class="date-part canva-text">THÁNG 11</span>
 </div>
-<p class="date-year canva-text">2026</p>
+<p class="date-year canva-text">2026</p><div class="ceremony-contact" aria-label="Thông tin liên hệ"><p class="ceremony-contact-title">LIÊN HỆ</p><p class="ceremony-contact-line"><a href="tel:0963012644">0963.012.644</a> (Nhie)</p><p class="ceremony-contact-line"><a href="tel:0907431066">0907.431.066</a> (Thảo – bạn Nhi)</p></div>
 
 </section>
 <section aria-labelledby="calendar-title" class="rsvp-section canva-section" id="rsvp-section">
@@ -331,7 +350,7 @@ h1{font-size:clamp(43px,9vw,62px)!important;line-height:1.14!important}
 </div>
 <div aria-label="Các ngày trong tháng 11 năm 2026" class="calendar-grid calendar-days canva-list"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span>1</span> <span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span> <span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span> <span>16</span><span aria-label="17 tháng 11, ngày lễ tốt nghiệp" class="featured-day">17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span> <span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span> <span>30</span>
 </div>
-</div><div class="ceremony-contact" aria-label="Thông tin liên hệ"><p class="ceremony-contact-title">LIÊN HỆ</p><p class="ceremony-contact-line"><a href="tel:0963012644">0963.012.644</a> (Nhie)</p><p class="ceremony-contact-line"><a href="tel:0907431066">0907.431.066</a> (Thảo – bạn Nhi)</p></div><button class="rsvp-button arrival-confirm" id="rsvp-button" type="button">XÁC NHẬN THAM DỰ</button>
+</div><button class="rsvp-button arrival-confirm" id="rsvp-button" type="button">XÁC NHẬN THAM DỰ</button>
 <p aria-live="polite" class="rsvp-feedback canva-text" id="rsvp-feedback" role="status"></p>
 </section>
 
